@@ -2,22 +2,22 @@
   {
     "id": 1,
     "nome": "Sensor de Pressão",
-    "valor": 5.2,
+    "valor": "5.2 bar",
     "status": "OK",
-    "historico": [5.0, 5.1, 5.3, 5.2, 5.2]
+    "historico": ["5.0", "5.1", "5.3", "5.2"]
   },
   {
     "id": 2,
     "nome": "Sensor de Fluxo",
-    "valor": 2.8,
+    "valor": "120 L/min",
     "status": "Alerta",
-    "historico": [2.9, 3.0, 2.7, 2.8, 2.8]
+    "historico": ["115", "118", "122", "120"]
   },
   {
     "id": 3,
     "nome": "Sensor de Temperatura",
-    "valor": 38.5,
+    "valor": "75 °C",
     "status": "OK",
-    "historico": [37.8, 38.0, 38.2, 38.4, 38.5]
+    "historico": ["70", "72", "74", "75"]
   }
 ]

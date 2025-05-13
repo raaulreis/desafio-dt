@@ -18,8 +18,9 @@ export default function SensorDetailScreen({ route, navigation }) {
       <FlatList
         data={sensor.historico}
         keyExtractor={(item, index) => index.toString()}
-        renderItem={({ item }) => <Text>{item}</Text>}
-      />
+        renderItem={({ item, index }) => (
+          <Text>{`Leitura ${index + 1}: ${item}`}</Text>
+        )}      />
       <Button title="Atualizar" onPress={atualizarDados} />
     </View>
   );
