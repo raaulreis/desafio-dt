@@ -1,24 +1,32 @@
 import React from 'react';
-import { View, Text, Button, StyleSheet, Image } from 'react-native';
+import { View, Text, Image, Button, StyleSheet } from 'react-native';
 
 export default function SplashScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <Image source={require('../assets/logo.png')} style={styles.logo} />
-      <Text style={styles.title}>Bem-vindo ao Desafio Digital Twin</Text>
-      <Button title="Começar" onPress={() => navigation.navigate('SensorList')} />
+      <Image source={require('../assets/digital_twin_logo.png')} style={styles.logo} />
+      <Text style={styles.title}>Desafio Digital Twin</Text>
+      <Button title="Começar" onPress={() => navigation.replace('SensorList')} />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1, justifyContent: 'center', alignItems: 'center'
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#fff',
   },
   logo: {
-    width: 120, height: 120, marginBottom: 20
+    width: 150,
+    height: 150,
+    marginBottom: 20,
+    resizeMode: 'contain',
   },
   title: {
-    fontSize: 18, marginBottom: 20, textAlign: 'center'
-  }
+    fontSize: 22,
+    fontWeight: 'bold',
+    marginBottom: 20,
+  },
 });
