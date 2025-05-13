@@ -1,3 +1,5 @@
+## Aluno: Raul Prado Reis - Advanced Programming & Mobile Dev
+
 # Desafio Digital Twin – Entrega 1
 
 Este projeto é a entrega do Challange Sprint 1 da matéria Advanced Programming & Mobile Dev da faculdade para construção de um Digital Twin de um sistema pneumático.  
